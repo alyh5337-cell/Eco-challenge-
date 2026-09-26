@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Tajawal', sans-serif;
+    background-color: #062316;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] * {
+    font-family: 'Tajawal', 'Fredoka', sans-serif;
+  }
+}
+
+/* Retro arcade shadows & button mechanics */
+.retro-card {
+  border: 4px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-radius: 1rem;
+}
+
+.retro-card-sm {
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px 0px #000000;
+  border-radius: 0.75rem;
+}
+
+.retro-btn {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.retro-btn-pressed {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #062316;
+}
+::-webkit-scrollbar-thumb {
+  background: #195b3d;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2bd97f;
+}

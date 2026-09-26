@@ -1,0 +1,43 @@
+import { CommunityPost } from '../types';
+
+export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
+  {
+    id: 'post-1',
+    user_id: 'user-samira',
+    author_name: 'Samira Green',
+    author_avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=SamiraG',
+    caption: 'Planting our fresh kitchen mint & basil starters today! Smells heavenly and zero packaging waste! 🌿🌱',
+    media_url: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80',
+    media_type: 'image',
+    likes_count: 24,
+    is_liked: false,
+    is_flagged: false,
+    created_at: '2026-09-20T14:20:00Z',
+  },
+  {
+    id: 'post-2',
+    user_id: 'user-omar',
+    author_name: 'Omar Eco-Ranger',
+    author_avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=OmarRanger',
+    caption: 'Collected 3 big bags of plastic litter at the shoreline sunset cleanup! The birds and turtles are smiling tonight 🐢🌊',
+    media_url: 'https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=600&q=80',
+    media_type: 'image',
+    likes_count: 38,
+    is_liked: true,
+    is_flagged: false,
+    created_at: '2026-09-21T09:15:00Z',
+  },
+  {
+    id: 'post-3',
+    user_id: 'user-leila',
+    author_name: 'Leila Solar',
+    author_avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=LeilaSolar',
+    caption: 'Switched all room desk lamps to smart timer LEDs and unplugged the standby microwave! Every kilowatt saved is a win ⚡🔋',
+    media_url: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80',
+    media_type: 'image',
+    likes_count: 17,
+    is_liked: false,
+    is_flagged: false,
+    created_at: '2026-09-22T08:30:00Z',
+  },
+];

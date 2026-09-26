@@ -1,0 +1,8 @@
+{
+  "name": "Eco Challenge v1.9.8",
+  "description": "Eco Challenge v1.9.8 - 90s retro-cartoon arcade mobile-first environmental quest, squad collaboration, Karin AI vision mentor, and QA diagnostic test suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

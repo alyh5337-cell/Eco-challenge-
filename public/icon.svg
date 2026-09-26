@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#103D29"/>
+      <stop offset="100%" stop-color="#062316"/>
+    </radialGradient>
+    <filter id="retroShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="12" dy="12" stdDeviation="0" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)"/>
+  <rect width="500" height="500" x="6" y="6" rx="94" fill="none" stroke="#000000" stroke-width="12"/>
+  <rect width="476" height="476" x="18" y="18" rx="82" fill="none" stroke="#FFD43F" stroke-width="8"/>
+
+  <!-- Centered Retro Shield Badge -->
+  <g filter="url(#retroShadow)">
+    <!-- Outer Shield Frame -->
+    <path d="M 256,60 L 410,130 C 410,290 256,410 256,410 C 256,410 102,290 102,130 Z"
+          fill="#103D29" stroke="#000000" stroke-width="16" stroke-linejoin="round"/>
+    <!-- Inner Shield Color -->
+    <path d="M 256,84 L 388,144 C 388,278 256,380 256,380 C 256,380 124,278 124,144 Z"
+          fill="#062316" stroke="#2BD97F" stroke-width="8"/>
+
+    <!-- Retro Sprout & Earth Leaf Motif -->
+    <!-- Giant Stylized 90s Cartoon Sprout -->
+    <path d="M 256,120 C 330,150 350,230 330,290 C 300,310 260,290 256,260 C 252,290 212,310 182,290 C 162,230 182,150 256,120 Z"
+          fill="#2BD97F" stroke="#000000" stroke-width="12" stroke-linejoin="round"/>
+
+    <!-- Sprout Core Highlight -->
+    <path d="M 256,150 C 300,170 315,225 305,265 C 285,280 262,260 256,240 C 250,260 227,280 207,265 C 197,225 212,170 256,150 Z"
+          fill="#A7F3D0" />
+
+    <!-- Stem & Roots -->
+    <path d="M 256,250 L 256,340 M 230,340 L 282,340"
+          stroke="#000000" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 256,250 L 256,340 M 230,340 L 282,340"
+          stroke="#FFB443" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Comic Sparkle Stars -->
+    <polygon points="170,120 178,136 194,144 178,152 170,168 162,152 146,144 162,136"
+             fill="#FFD43F" stroke="#000000" stroke-width="4"/>
+    <polygon points="340,110 348,124 362,130 348,136 340,150 332,136 318,130 332,124"
+             fill="#FFD43F" stroke="#000000" stroke-width="4"/>
+    <circle cx="256" cy="180" r="14" fill="#FFB443" stroke="#000000" stroke-width="4"/>
+  </g>
+</svg>
